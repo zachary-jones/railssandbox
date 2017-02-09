@@ -31,7 +31,6 @@ module ApplicationHelper
                 "input"=>[params]
             }.to_json
             @body = body
-            puts @body
             # set post uri
             uri = URI(Config.get_create_lead_url)
             # setup http request
