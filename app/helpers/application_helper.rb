@@ -37,9 +37,6 @@ module ApplicationHelper
             http = Net::HTTP.new(uri.host, uri.port)
             http.use_ssl = true
             uri.query = "access_token=#{get_marketo_token}"
-            puts "********************"
-            puts uri
-            puts @body.inspect
             request = Net::HTTP::Post.new(uri,  { 'Content-Type' => 'application/json' })
             request.body = @body
             # make http request
