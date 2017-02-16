@@ -3,7 +3,7 @@ require 'open-uri'
 
 module ApplicationHelper
     class MarketoRepository
-        # http request to return a new mkto access_token
+        # http request to return a new mkto access_token 
         def get_marketo_token
             begin
                 # http location
